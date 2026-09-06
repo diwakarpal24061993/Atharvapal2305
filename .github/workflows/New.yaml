@@ -1,0 +1,20 @@
+# workflow[
+
+# should have name
+name: Hello
+
+#on tell when the workflow should run (give identation by tab)
+
+on:
+  workflow_dispatch:
+
+# Jobs tells what workflow should do there can be one or more jobs hensewesrite jobs
+# jobs is a object so needs identation
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hello Dosto"
+#steps
